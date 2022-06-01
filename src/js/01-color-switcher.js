@@ -9,6 +9,8 @@ const refs = {
 let timerId = null;
 
 refs.btnStart.addEventListener('click', () => {
+    refs.btnStart.setAttribute('disabled', true);
+    
     timerId = setInterval(() => {
     return changeBcgColor()}, 1000)
 });
